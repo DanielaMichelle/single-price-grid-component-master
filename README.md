@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/DanielaMichelle/single-price-grid-component-master
+- Live Site URL: https://danielamichelle.github.io/single-price-grid-component-master/
 
 ### Built with
 
