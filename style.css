@@ -1,0 +1,188 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --karla-font:'Karla', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%; 
+}
+
+main {
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--karla-font);
+}
+
+.single-price-component {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 1fr;
+    width: 648px;
+    box-shadow: 4px -5px 48px -9px rgba(152,166,189,0.75);
+
+}
+
+/* HEADER */
+.single-price-component__header {
+    grid-column: 1 / 3;
+    padding: 4rem;
+    background-color: white;
+}
+
+.single-price-component__header h1 {
+    color: var(--cyan);
+    font-size: 2.6rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+
+.single-price-component__header h3 {
+    color: var(--bright-yellow);
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+.single-price-component__header p {
+    color: var(--grayish-blue);
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+/* SUSCRIBTION */
+.single-price-component__subscription {
+    padding: 4rem;
+    background-color: var(--cyan);
+    color: var(--light-gray);
+}
+
+.single-price-component__subscription h2 {
+    font-size: 1.8rem;
+}
+
+
+.single-price-component__subscription--price {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.single-price-component__subscription--price .price {
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+
+.single-price-component__subscription--price .period {
+    font-size: 1.6rem;
+    color: hsl(204, 43%, 86%);
+   
+}
+
+.single-price-component__subscription p {
+    font-size: 1.6rem;
+}
+
+.single-price-component__subscription button {
+    width: 100%;
+    background-color: var(--bright-yellow);
+    color: var(--light-gray);
+    border-radius: 5px;
+    border: none;
+    height: 4.5rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    box-shadow: 7px 14px 42px -17px rgba(0,0,0,0.75);
+}
+
+/* WHY US */
+.single-price-component__why-us {
+    background-color: rgb(73 190 189);
+    padding: 4rem;
+    color: var(--light-gray);
+}
+
+.single-price-component__why-us h2{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.single-price-component__why-us ul {
+    list-style: none;
+}
+
+
+.single-price-component__why-us ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: hsl(204, 43%, 86%);
+}
+
+
+@media (max-width: 768px) {
+    .single-price-component {
+        width: 95%;
+    }
+
+    .single-price-component__subscription p {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 578px) {
+   
+    main {
+        height: auto;
+    }
+
+    .single-price-component {
+        display: block;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+  
+}
+
+@media (max-width: 375px) {
+    .single-price-component {
+        width: 85%;
+    }
+    
+    .single-price-component__header {
+        padding: 2rem;
+        padding-bottom: 3rem;
+    } 
+
+    .single-price-component__header p {
+        font-size: 1.5rem;
+    }
+
+    .single-price-component__subscription {
+        padding: 2rem;
+    }
+
+    .single-price-component__subscription p {
+        font-size: 1.6rem;
+    }
+
+    .single-price-component__why-us {
+        padding: 2rem;
+    }
+    
+}
